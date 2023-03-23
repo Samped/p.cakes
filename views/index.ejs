@@ -1,0 +1,71 @@
+<%- include('partials/head'); -%>
+
+
+
+<body class="index_page">
+      <%- include('partials/header'); -%>
+      <main>
+      <section id="first_layout"> 
+      <div class="home">
+      <div class="title">
+      <h1> Welcome to presh and cake</h1>
+      <p> Let's make your special day tasty and memorable</p>
+        <div indexbtn>
+        <button> order now</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <section id="second_layout">
+            <div>
+                  <h1>
+                        second section
+                  </h1>
+            </div>
+      </section>
+      <section id="third_layout">
+            <div>
+                  <h1>
+                        third section
+                  </h1>
+                  <p>
+                        we are still testing this whole thing
+                        nevertheless this site will be an amazing website
+                        it will be great
+                  </p>
+            </div>
+      </section>
+      </main>
+      <%- include('partials/footer'); -%>
+      <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 0);
+            });
+      
+      function 1changeBg(){
+            
+            const images = [
+                  'url("cake background1.jpg")',
+                  'url("cake background2.jpg")',
+                  'url("cake background3.jpg")',
+                  
+            ]
+
+            const section = document.querySelector('section')
+            const bg = images[Math.floor(Math.random() *
+            images.length)];
+            section.style.backgroundImage = bg;
+      }
+
+      setInterval(changeBg, 3000)
+
+
+          </script>
+    
+
+</body>
+
+

@@ -1,0 +1,316 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("");
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Great+vibes");
+
+*{
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+.index_page{
+  margin-left: 0px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  background-position: center;
+  padding-top: 0;
+  padding-left: 0%;
+  padding-right: 0%;
+  background-size: cover;
+  position: relative;
+}
+section {
+  height: 100vh;
+  border: 0px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home{
+  display: flex;
+  position: relative;
+  top: 40px;
+ 
+}
+.title{
+  border: black;
+  width: 470px;
+  height: 550px;
+  background-color:rgb(137, 60, 60) ;
+  opacity: 0.71;
+  position: relative;
+  left: -440px;
+  top: 10px;
+}
+
+
+h1, h2, h3, h4, ul, li, a, p, input, label, button, div, footer{
+  margin: 0;
+  padding: 0
+}
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.home p{
+  font-size: 2.1rem;
+  font-family: "Great vibes", sans-serif;
+  text-transform: lowercase;
+  margin-right: 20px;
+  text-align:start;
+  font-style: normal;
+  position: relative;
+  top: 160px;
+  left: 25px;
+}
+.home h1{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family:'Sofia', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  top: 150px;
+  left: 10px;
+  text-align: left;
+  color: white;
+
+}
+.logoimg{
+  position:relative;
+  height: 55px;
+  top: -90px;
+  left: 41.5px;
+  
+}
+.logoimg:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+.nav-bar{
+  font-size: 0.8rem;
+  font-family: "Great vibes", sans-serif;
+
+}
+nav{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  position: sticky;
+  border-style: solid;
+  border: 0px;
+  height: 50px;
+  top: 0px;
+  align-items: center;
+  width: 1350px;
+  height: 95px;
+  background-color: white;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+}
+nav li{
+  margin-left: 40px;
+}
+nav li a{
+  text-transform:uppercase;
+  font-weight: 550;
+  font-size: 1.2em;
+  display: flex;
+  padding: 0px 0px;
+  letter-spacing: 0px;
+  color: black;
+  font-family:'Sofia', sans-serif;
+  position: relative;
+  left: 650px;
+}
+nav li a::after{
+  content:'';
+  display: flex;
+  width: 0;
+  height: 2px;
+  background-color: #FEE996;
+  transition: width .3s;
+}
+nav li a:hover::after{
+  width: 100%
+}
+.headerbtn{
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: 0px;
+  border-radius: 30px;
+  border-style: solid;
+  background-color: #FEE996;
+  color:black;
+
+}
+.headerbtn:hover{
+  background-color: #ff0099;
+  color: white;
+}
+.btn{
+  border-radius: 36px;
+  background: #FEE996;
+}
+button{
+  margin-top: 22px;
+  border-radius: 36px;
+  background: #FEE996;
+  border:0;
+  font-weight: 300;
+  font-size: 1em;
+  display: block;
+  padding: 9px 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family:'Sofia', sans-serif;
+  position: relative;
+  top: 160px;
+  left: 25px;
+}
+button:hover{
+  background-color: #ff0099;
+  color: white;
+  cursor: pointer;
+}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 10px;
+  background-color: white;
+  border:0px;
+  border-style: solid;
+  border-color: #FEE996;
+  height: 110px;
+  z-index: 100000;
+  
+}
+header .logo {
+  position: relative;
+  top: 10px;
+  padding-left: 20px;
+ }
+header .logo:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  }
+header ul li{
+  position: relative;
+  list-style: none;
+  margin-left: 0px;
+
+}
+header ul li a {
+  position: relative;
+  left: 410px;
+  margin: 10px 40px;
+  text-decoration: none;
+  color: black;
+  font-family:'Sofia', sans-serif;
+  text-transform:uppercase;
+  font-weight: 550;
+  font-size: 0.8em;
+
+}
+header.sticky{
+  padding:  0px 10px;
+  background-color: rgb(244, 238, 225);
+  color: white;
+  height: 90;
+}
+header.sticky .logo{
+top: 8px;
+}
+#first_layout{
+  background-image: url("cake background9.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -30px;
+}
+.btn:hover{
+  background-color: #ff0099;
+  color: white;
+}
+footer{
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+  font-size: 1.6rem;
+  position: relative;
+  top: 180px;
+  font-family: 'Cormorant', serif;
+}
+
+
+
+/* Style the Sticky icons on web page 
+.stickyicon-list {   
+  position: relative;   
+  top: 200px;   
+           
+  }         
+  .stickyicon-list a {   
+  display: block;   
+  text-align: center;   
+  padding: 8px;   
+  transition: all 0.5s ease;   
+  color: white;   
+  font-size: 20px;   
+  }         
+  /* HOver affect on sticky social media icons   
+  .stickyicon-list a:hover {   
+  color: #000;   
+  width:10px;   
+  }   
+  /* Now we have to design each icon of social media          
+  .facebook {   
+  background: #3b5998;   
+  color: white;  
+  }         
+  .twitter {   
+  color: white;   
+  background: #00acee;   
+  }    
+  .instagram {   
+  background: #3f729b;   
+  color: white;   
+  }    
+  .youtube {   
+  color: white;   
+  background: #c4302b;    
+  } */
+
+  #second_layout{
+    background-color: white;
+  }
+
+  #third_layout{
+    background-color:aqua;
+  }
